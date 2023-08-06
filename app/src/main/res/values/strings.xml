@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ChatAppWithLocation</string>
+    <string name="key">AIzaSyDXbeduJIII5l3irMmUfCzKKkJQ6YSSJQA</string>
+<!--    <string name="key">AIzaSyAK7duO27WvYFKZguCCQV7xfvocT0M9Oto</string>-->
 </resources>
