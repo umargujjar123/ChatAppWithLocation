@@ -3,9 +3,9 @@ package comalpha4.chatappwithlocation
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MapViewActivity : AppCompatActivity() {
+class ChatActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_map_view)
+        setContentView(R.layout.activity_chat)
     }
 }
