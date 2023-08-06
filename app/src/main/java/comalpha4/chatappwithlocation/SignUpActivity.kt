@@ -20,7 +20,7 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var password: TextInputEditText
     lateinit var LoginBtn: TextView
     var reference: DatabaseReference? = null
-    var mtoken:String = ""
+    var mtoken: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
