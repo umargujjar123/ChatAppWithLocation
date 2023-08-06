@@ -25,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        init()
     }
     fun init() {
         btnLogin = findViewById<TextView>(R.id.btnLogin)
@@ -33,6 +34,12 @@ class LoginActivity : AppCompatActivity() {
         signup = findViewById<TextView>(R.id.signup)
 
         reference = FirebaseDatabase.getInstance().getReference("users")
+        btnLogin.setOnClickListener {
+            validation()
+        }
+        signup.setOnClickListener {
+            startActivity(Intent(this,SignUpActivity::class.java))
+        }
     }
     fun validation() {
         if (passwordEt.getText().toString().trim { it <= ' ' } == "") {

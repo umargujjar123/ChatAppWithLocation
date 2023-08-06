@@ -54,9 +54,7 @@
             android:id="@+id/phoneNumberET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:inputType="number"
-            android:text="@={viewmodel.loginDataModel.phone}" />
+            android:maxLines="1"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,8 +75,7 @@
             android:id="@+id/passwordEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:text="@={viewmodel.loginDataModel.password}" />
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
