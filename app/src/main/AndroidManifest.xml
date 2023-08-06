@@ -50,6 +50,9 @@
             android:exported="true"
             android:foregroundServiceType="location|camera|microphone"
             android:permission="android.permission.ACCESS_FINE_LOCATION" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAK7duO27WvYFKZguCCQV7xfvocT0M9Oto" />
     </application>
 
 </manifest>
