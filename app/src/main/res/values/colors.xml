@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="appColor">#383B53</color>
     <color name="formFieldLight">#8F383B53</color>
-
+    <color name="etHint">@color/formFieldLight</color>
+    <color name="riplecolor">#474A65</color>
 </resources>
