@@ -32,6 +32,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MapViewActivity"
+            android:exported="true">
+
+        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAK7duO27WvYFKZguCCQV7xfvocT0M9Oto" />
     </application>
 
 </manifest>

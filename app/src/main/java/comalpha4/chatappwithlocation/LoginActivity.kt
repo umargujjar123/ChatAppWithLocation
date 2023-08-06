@@ -102,6 +102,13 @@ class LoginActivity : AppCompatActivity() {
                         }
                         finish()
                     */
+                        startActivity(
+                            Intent(
+                                this@LoginActivity,
+                                MapViewActivity::class.java
+                            )
+                        )
+                        finish()
                         Toast.makeText(this@LoginActivity, "LoginSucccess", Toast.LENGTH_SHORT).show()
 
                     } else {
