@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/left_guideline"
@@ -42,118 +42,119 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nameTextField"
         style="@style/CustomTextInputLayout"
-        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
         android:layout_width="0dp"
-        app:hintTextColor="@color/appColor"
-        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/top_action_bar"
-        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Name"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        app:hintTextColor="@color/appColor"
         app:layout_constraintEnd_toStartOf="@+id/right_guideline"
-        android:hint="Enter Name">
+        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/top_action_bar">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/NameET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            />
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailTextField"
         style="@style/CustomTextInputLayout"
-        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
         android:layout_width="0dp"
-        app:hintTextColor="@color/appColor"
-        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/nameTextField"
-        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Email"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        app:hintTextColor="@color/appColor"
         app:layout_constraintEnd_toStartOf="@+id/right_guideline"
-        android:hint="Enter Email">
+        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextField">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            />
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phoneNumberTextField"
         style="@style/CustomTextInputLayout"
-        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
         android:layout_width="0dp"
-        app:hintTextColor="@color/appColor"
-        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/emailTextField"
-        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Mobile Number"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
+        app:hintTextColor="@color/appColor"
         app:layout_constraintEnd_toStartOf="@+id/right_guideline"
-        android:hint="Enter Mobile Number">
+        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextField">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phoneNumberET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:inputType="number"
-            />
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTextField"
         style="@style/CustomTextInputLayout"
-        app:hintTextColor="@color/appColor"
-        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="Enter Password"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
 
-        app:layout_constraintTop_toBottomOf="@+id/phoneNumberTextField"
-        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        app:hintTextColor="@color/appColor"
         app:layout_constraintEnd_toStartOf="@+id/right_guideline"
-        android:hint="Enter Password">
+        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberTextField">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            />
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confirmpasswordTextField"
         style="@style/CustomTextInputLayout"
-        app:hintTextColor="@color/appColor"
-        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:theme="@style/ThemeOverlay.AppTheme.TextInputEditText.Outlined"
 
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextField"
-        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        app:hintTextColor="@color/appColor"
         app:layout_constraintEnd_toStartOf="@+id/right_guideline"
-        android:hint="Confirm Password">
+        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextField">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/confirmPasswordEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="1"
-            />
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <TextView
+        style="@style/LoginBtn"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        style="@style/LoginBtn"
         android:layout_marginTop="53dp"
         android:text="SignUp"
-        app:layout_constraintStart_toEndOf="@+id/left_guideline"
         app:layout_constraintEnd_toStartOf="@+id/right_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/confirmpasswordTextField"
-        />
+        app:layout_constraintStart_toEndOf="@+id/left_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpasswordTextField" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
